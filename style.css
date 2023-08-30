@@ -1,0 +1,533 @@
+/*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
+
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-MedIt.woff') format('woff'),
+      url('webfonts/SemplicitaPro-MedIt.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-SemibdIt.woff') format('woff'),
+      url('webfonts/SemplicitaPro-SemibdIt.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-Medium.woff') format('woff'),
+      url('webfonts/SemplicitaPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-Semibold.woff') format('woff'),
+      url('webfonts/SemplicitaPro-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-Regular.woff') format('woff'),
+      url('webfonts/SemplicitaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-Bold.woff') format('woff'),
+      url('webfonts/SemplicitaPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-Light.woff') format('woff'),
+      url('webfonts/SemplicitaPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-BoldItalic.woff') format('woff'),
+      url('webfonts/SemplicitaPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-Italic.woff') format('woff'),
+      url('webfonts/SemplicitaPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemplicitaPro';
+  src: url('webfonts/SemplicitaPro-LtIt.woff') format('woff'),
+      url('webfonts/SemplicitaPro-LtIt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  --theme__color1: #76c9b1;
+  --theme__color2: #254655;
+  --SemplicitaPro: 'SemplicitaPro';
+}
+*,::before,::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: var(--theme__color2);
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--SemplicitaPro);
+}
+a, a:active, a:focus, a:active, a:hover {
+  text-decoration:none !important;
+  color: inherit;
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+::placeholder {
+  opacity: 1;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+iframe {
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+  margin-bottom: 15px;
+}
+p:last-child{
+  margin: 0;
+}
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+
+/* header */
+.header-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: var(--theme__color2);
+}
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  width: 160px;
+  display: block;
+  flex-shrink: 0;
+}
+.navbar .container {
+
+}
+.navbar-collapse {
+  flex-basis: unset !important;
+  flex-grow: 0 !important;
+}
+.navbar-nav {
+  gap: 52px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 16.5px;
+  height: 130px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--theme__color1);
+}
+.navbar-dark .navbar-nav .nav-link::after {
+  content: '';
+  height: 15px;
+  width: 31px;
+  background: var(--theme__color1);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  opacity: 0;
+}
+.navbar-dark .navbar-nav .nav-link.active::after {
+  opacity: 1;
+}
+/* header-end */
+
+
+
+
+
+
+/* ---offcanvas-css--- */
+.offcanvas-open {
+  font-size: 22px;
+  transition: 0.3s;
+}
+.offcanvas-open:hover {
+  color: #97A3AE;
+}
+.offcanvas-close {
+  color: var(--theme__color1);
+  position: absolute;
+  transition: 0.3s;
+  right: 25px;
+  top: 25px;
+}
+.offcanvas-close:hover {
+  color: #97A3AE;
+}
+.offcanvas-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(-105%);
+  transition: 0.3s;
+}
+.offcanvas-menu.active {
+  transform: translate(0);
+}
+.offcanvas-menu .offmenu {
+  max-width: 250px;
+  min-width: 200px;
+  z-index: 5;
+  position: relative;
+  background: #d5dce2;
+  height: 100%;
+  padding: 50px 20px 40px;
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.offcanvas-menu .offmenu :-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: var(--theme__color1);
+  padding: 10px;
+}
+.dropdown-menu-custom ul {
+  background: #fff;
+  padding: 20px 0;
+}
+.dropdown-menu-custom ul li a {
+  color: #97A3AE;
+}
+.offcanvas-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.178);
+  z-index: 2;
+  transform: 0;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.offcanvas-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* ---offcanvas-css-end---*/
+
+/* --preloader-- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--theme__color1);
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+/* --preloader-end-- */
+
+
+/* ---hero-section--- */
+.hero-section {
+  background: url('images/hero-bg.png') no-repeat center center/cover;
+  color: #fff;
+}
+.hero-section__inner {
+  min-height: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__content {
+  
+}
+.hero__content .h1 {
+  font-size: 38.5px;
+  line-height: 1.55;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+.hero__content .bottom-button {
+  margin-top: 65px;
+}
+/* ---hero-section---end */
+
+
+/* ---common--- */
+.h2 {
+  font-size: 36px;
+  margin-bottom: 31px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+.p {
+  font-size: 20.4px;
+  line-height: 2.1;
+  font-weight: 500;
+}
+.p-l {
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+.cont-blk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cont-blk--center {
+  align-items: center;
+  text-align: center;
+}
+.cont-blk .bottom-button {
+  margin-top: 40px;
+}
+/* ---common---end */
+
+
+/* ---dr-section--- */
+.dr-section {
+  padding: 120px 0 100px;
+  position: relative;
+  z-index: 2;
+}
+.dr-section::after {
+  --poly: 418px;
+  content: '';
+  height: 100%;
+  width: calc(50vw - 240px);
+  display: block;
+  top: 0;
+  right: 0;
+  background: var(--theme__color2);
+  position: absolute;
+  clip-path: polygon(var(--poly) 0, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+.dr-section__inner {
+
+}
+.dr-content {
+
+}
+.dr-content p {
+  padding-right: 30px;
+}
+/* ---dr-section---end */
+
+
+/* ---mission-section--- */
+.mission-section {
+  padding: 160px 0;
+  background: url('images/mission-background.png') no-repeat center center/cover;
+  color: #fff;
+}
+.mission-section__inner {
+
+}
+
+.mission-row {
+
+}
+
+.mission-logo {
+  width: 175px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+}
+.mission-logo img {
+
+}
+.mission-content {
+
+}
+.mission-content .h2 {
+  letter-spacing: 12px;
+}
+/* ---mission-section---end */
+
+
+/* ---commit-section--- */
+.commit-section {
+  padding: 310px 0 150px;
+  background: url('images/commit-bg.png') no-repeat center center/cover;
+  position: relative;
+  z-index: 2;
+}
+.commit-section::after {
+  --poly: 418px;
+  content: '';
+  height: 100%;
+  width: calc(50vw - 240px);
+  display: block;
+  top: 0;
+  left: 0;
+  background: var(--theme__color2);
+  color: #fff;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--poly)) 100%, 0 100% );
+  z-index: -1;
+}
+.commit-section__inner {
+
+}
+
+.commit-content {
+	padding-left: 60px;
+	text-align: right;
+	color: #fff;
+}
+.commit-content .p-l {
+  line-height: 1.9;
+}
+/* ---commit-section---end */
