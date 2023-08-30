@@ -1,10 +1,12 @@
 /* ---buttons--- */
 .default-button {
     font-size: 17px;
-    padding: 4px 32px;
-    font-weight: 700;
+    padding: 6px 32px 4px;
     min-width: 318px;
+    font-size: 14px;
     min-height: 50px;
+    letter-spacing: 3px;
+    font-weight: 700;
     background: var(--theme__color1);
     color: var(--theme__color2);
     display: inline-flex;
@@ -13,6 +15,7 @@
     text-align: center;
     border: 1px solid transparent;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 .default-button:hover {
     color: var(--theme__color2);

@@ -1,7 +1,189 @@
 
 
 @media (max-width: 1399px) {
- 
+    .navbar-brand {
+        width: 115px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 13px;
+        height: 95px;
+        letter-spacing: 1px;
+    }
+    .navbar-nav {
+        gap: 37px;
+    }
+    .navbar-dark .navbar-nav .nav-link::after {
+        height: 10px;
+        width: 22px;
+    }
+
+    .hero-section__inner {
+        min-height: 600px;
+        padding: 90px 0 55px;
+    }
+    .hero__content .h1 {
+        font-size: 28px;
+        line-height: 1.55;
+        letter-spacing: 12px;
+    }
+    .default-button {
+        font-size: 17px;
+        padding: 5px 20px 3px;
+        min-width: 245px;
+        font-size: 11.5px;
+        min-height: 44px;
+    }
+    .hero__content .bottom-button {
+        margin-top: 30px;
+    }
+
+
+    .h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .p {
+        font-size: 16px;
+    }
+    .dr-section {
+        padding: 80px 0 65px;
+    }
+    .dr-section::after {
+        --poly: 258px;
+        width: calc(50vw - 190px);
+    }
+
+
+    .mission-section {
+        padding: 110px 0;
+    }
+    .mission-logo {
+        width: 120px;
+        margin-top: 10px;
+    }
+    .mission-content .h2 {
+        letter-spacing: 8px;
+    }
+    .p-l {
+        font-size: 18.5px;
+        letter-spacing: 0.2px;
+    }
+    .cont-blk .bottom-button {
+        margin-top: 25px;
+    }
+
+    .commit-section::after {
+        --poly: 258px;
+        width: calc(50vw - 190px);
+    }
+
+    .commit-section {
+        padding: 230px 0 100px;
+    }
+
+    .market-section {
+        padding: 120px 0 80px;
+    }
+    .h3 {
+        font-size: 23px;
+        margin-bottom: 11px;
+        letter-spacing: 7px;
+    }
+    .market-item__inner .txt {
+        font-size: 25px;
+    }
+    .market-item__inner .icon {
+        width: 48px;
+    }
+    .market-item {
+        padding: 18px 60px 18px 145px;
+    }
+    .market-section__title {
+        margin-bottom: 40px;
+    }
+
+
+    .funda-title .h2 {
+        letter-spacing: 7px;
+    }
+    .funda-content h4 {
+        font-size: 16px;
+        margin-bottom: 11px;
+        letter-spacing: 2.5px;
+    }
+    .funda-content p {
+        font-size: 15.9px;
+        letter-spacing: 0.2px;
+    }
+    .funda-content {
+        margin-bottom: 40px;
+    }
+    .funda-values h4 {
+        font-size: 16px;
+        margin-bottom: 25px;
+        letter-spacing: 2.1px;
+    }
+    .funda-values p {
+        font-size: 16px;
+        margin-bottom: 22px;
+        letter-spacing: 0.4px;
+    }
+    .funda-values {
+        margin-top: 110px;
+        padding-right: 110px;
+    }
+    .funda-section {
+        padding: 95px 0 70px;
+    }
+
+    .team-section__title h3 {
+        font-size: 18.5px;
+        letter-spacing: 1.3px;
+    }
+    .team-section__title {
+        margin-bottom: 24px;
+    }
+    .member-social li a {
+        font-size: 21px;
+    }
+    .team-member__image .member-social {
+        bottom: 14px;
+        right: 15px;
+    }
+    .team-member__content__title h3 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    .team-member__content__title h4 {
+        letter-spacing: 2px;
+        font-size: 14.7px;
+    }
+    .team-member__content__bd p {
+        font-size: 15.7px;
+    }
+    .team-member__content__title {
+        margin-bottom: 20px;
+    }
+    .team-member__content {
+        padding: 20px 0 0;
+    }
+    .read-ex .caret {
+        width: 12px;
+    }
+    .read-ex {
+        margin-top: 6px;
+        gap: 15px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .team-section {
+        padding: 60px 0;
+    }
+    .footer-section__inner {
+        padding: 50px 32px 70px;
+    }
+
+
 }
 
 
@@ -11,12 +193,142 @@
 
 
 @media (max-width: 991px) {
- 
+    .navbar {
+        padding: 10px 0;
+    }
+
+
+    .funda-values {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .navbar-collapse {
+        flex-basis: 100% !important;
+        flex-grow: 1 !important;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 13px;
+        height: 40px;
+        letter-spacing: 1px;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 48px;
+    }
+    .navbar-dark .navbar-nav .nav-link.active::after {
+        bottom: 50%;
+        left: 20px;
+        transform: translate(0,50%);
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+        height: 15px;
+        width: 10px;
+    }
+    .navbar-nav {
+        gap: 0px;
+        padding: 25px 0 10px;
+    }
+
+
+    .footer-section__inner {
+        padding: 40px 0 80px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
 }
 
 
 @media (max-width: 768px) {
- 
+    .hero__content .h1 {
+        font-size: 25px;
+        line-height: 1.55;
+        letter-spacing: 9px;
+    }
+    .hero-section__inner {
+        min-height: 450px;
+        padding: 60px 0 40px;
+    }
+    .hero__content .bottom-button {
+        margin-top: 20px;
+    }
+    .h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .dr-section {
+        padding: 50px 0 40px;
+    }
+    .dr-content p {
+        padding-right: 0;
+    }
+    .dr-section::after {
+        display: none;
+    }
+
+    .mission-section {
+        padding: 60px 0;
+    }
+    .commit-content {
+        padding-left: 0;
+        text-align: left;
+    }
+    .commit-section {
+        padding: 50px 0 50px;
+    }
+    .commit-section::after {
+        display: none;
+    }
+
+    .market-section {
+        padding: 59px 0 50px;
+    }
+    .h3 {
+        font-size: 16px;
+        margin-bottom: 9px;
+        letter-spacing: 4px;
+    }
+    .p {
+        font-size: 15px;
+    }
+    .market-item {
+        padding: 10px 10px 10px 10px;
+    }
+    .market-item__inner {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+    .market-item__inner {
+        gap: 15px;
+    }
+    .market-item__inner .txt {
+        font-size: 18px;
+    }
+    .market-item__inner .icon {
+        width: 35px;
+    }
+    .market-section__title {
+        margin-bottom: 25px;
+    }
+
+    .funda-section {
+        padding: 55px 0 50px;
+    }
+    .funda-content {
+        margin-bottom: 25px;
+    }
+    .team-section {
+        padding: 50px 0;
+    }
+
+    .p-l {
+        font-size: 17px;
+    }
 }
 
 
@@ -25,6 +337,15 @@
 }
 
 
-@media (max-width: 390px) {
- 
+@media (max-width: 370px) {
+    .hero__content .h1 {
+        font-size: 24px;
+    }
+
+    .team-section__title h3 {
+        font-size: 16px;
+    }
+    .funda-content h4 {
+        font-size: 15px;
+    }
 }
