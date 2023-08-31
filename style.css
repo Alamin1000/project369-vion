@@ -193,6 +193,7 @@ p:last-child{
   width: 100%;
   z-index: 100;
   background: var(--theme__color2);
+  border-top: 4px solid var(--theme__color1);
 }
 .navbar {
   padding: 0;
@@ -736,6 +737,10 @@ p:last-child{
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+.read-ex:hover {
+  color: var(--theme__color1);
 }
 .read-ex .caret {
   width: 16px;
